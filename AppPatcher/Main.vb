@@ -74,7 +74,6 @@ Public Class MainForm
                     Dim PPath As String = node.SelectSingleNode("path").InnerText
                     Dim file_node As String = xmlnode(i).ChildNodes.Item(0).InnerText.Trim
                     Dim TR_text As String = file_node.Substring(file_node.IndexOf("files\") + 6)
-                    'MsgBox(xmlnode(i).ChildNodes.Item(0).InnerText.Trim & vbNewLine & PPath & "\" & TR_text)
                     My.Computer.FileSystem.MoveFile(PPath & "\" & TR_text, PPath & "\" & TR_text & ".u2l", True)
                     Debugger1.Items.Add("Alte Datei unter " & TR_text & ".u2l" & " gesichert")
                     Debugger1.SelectedIndex = -1
