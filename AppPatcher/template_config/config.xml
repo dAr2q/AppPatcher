@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Patcher>
+	<App>
+		<title>ProgramName</title>
+		<rep>files\program.exe</rep>
+		<rep>files\other.dll</rep>
+		<path>C:\Program Files\MyProgram</path>
+	</App>
+</Patcher>
