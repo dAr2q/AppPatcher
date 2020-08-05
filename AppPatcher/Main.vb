@@ -56,7 +56,7 @@ Public Class MainForm
                     End If
                 End If
             Next
-            Label1.Text = "Bereit zum Patchen."
+            Main_text.Text = "Bereit zum Patchen."
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical)
         End Try
@@ -85,10 +85,11 @@ Public Class MainForm
                     ProgressBar1.Increment(25)
                 Next
             Next
-            Label1.Text = "Dateien erfolgreich kopiert"
+            Main_text.Text = "Dateien erfolgreich kopiert"
             My.Computer.Audio.PlaySystemSound(System.Media.SystemSounds.Asterisk)
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical)
+            Main_text.Text = "Fehler beim kopieren der Dateien."
         End Try
     End Sub
 End Class

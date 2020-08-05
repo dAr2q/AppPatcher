@@ -24,7 +24,7 @@ Partial Class MainForm
     Private Sub InitializeComponent()
         Me.start_patch = New System.Windows.Forms.Button()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Main_text = New System.Windows.Forms.Label()
         Me.Debugger1 = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
@@ -44,14 +44,14 @@ Partial Class MainForm
         Me.ProgressBar1.Size = New System.Drawing.Size(273, 23)
         Me.ProgressBar1.TabIndex = 1
         '
-        'Label1
+        'Main_text
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 14)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Label1"
+        Me.Main_text.AutoSize = True
+        Me.Main_text.Location = New System.Drawing.Point(12, 14)
+        Me.Main_text.Name = "Main_text"
+        Me.Main_text.Size = New System.Drawing.Size(39, 13)
+        Me.Main_text.TabIndex = 2
+        Me.Main_text.Text = "Label1"
         '
         'Debugger1
         '
@@ -67,7 +67,7 @@ Partial Class MainForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(298, 314)
         Me.Controls.Add(Me.Debugger1)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Main_text)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.start_patch)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
@@ -81,6 +81,6 @@ Partial Class MainForm
 
     Friend WithEvents start_patch As Button
     Friend WithEvents ProgressBar1 As ProgressBar
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Main_text As Label
     Friend WithEvents Debugger1 As ListBox
 End Class
